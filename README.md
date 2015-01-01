@@ -1,5 +1,4 @@
-An Efficiency Comparison of Text Editors Used in Academic Research and
-Development
+An Efficiency Comparison of Text Editors Used in Academic Research and Development
 ===========
 
 The URL to view the document is
