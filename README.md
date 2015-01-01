@@ -1,5 +1,4 @@
 An Efficiency Comparison of Text Editors Used in Academic Research and
-======================================================================
 Development
 ===========
 
