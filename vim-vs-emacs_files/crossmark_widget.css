@@ -1,0 +1,163 @@
+/* CrossMark Widget to be included in HTML pages */
+/* v1.4 */
+#open-crossmark {
+	display: block;
+}
+
+/* CrossMark Icon */
+#crossmark-icon {
+	display: block;
+	margin: 0;
+	border: 0;
+}
+
+/* Tooltip */
+
+#crossmark-tooltip-130 {
+	position: absolute;
+	z-index: 999;
+	height: auto;
+	width: 146px;
+}
+
+#crossmark-tooltip-130 .cmtttop {
+	position: relative;
+	width: 146px;
+	height: 13px;
+	background: transparent url(http://crossmark.crossref.org/images/bg_tooltip130_top.png) top left no-repeat;
+}
+
+#crossmark-tooltip-130 .cmttmid {
+	position: relative;
+	width: 146px;
+	height: auto;
+	background: transparent url(http://crossmark.crossref.org/images/bg_tooltip130_middle.png) top left repeat-y;
+}
+
+#crossmark-tooltip-130 .cmttbot {
+	position: relative;
+	width: 146px;
+	height: 28px;
+	background: transparent url(http://crossmark.crossref.org/images/bg_tooltip130_bottom.png) top left no-repeat;
+}
+
+.crossmark-tooltip p {
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	line-height: 1.33 !important;
+	font-size: 10px !important;
+	margin: 0 !important;
+	padding: 3px 20px 4px 20px !important;
+	color: #666 !important;
+}
+
+/* jQuery UI Theming */
+
+/* Modal Overlay */
+.ui-widget-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent url(http://crossmark.crossref.org/images/bg_overlay.png) top left repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.crossmark-ui-dialog.ui-dialog {
+	position: absolute;
+	background: #666 url(http://crossmark.crossref.org/images/bg_dialog_footer.png) bottom left repeat-x;
+	border: none;
+	width: 550px;
+	height: 550px;
+	overflow: visible;
+	padding: 0;
+}
+
+.crossmark-ui-dialog .ui-dialog-titlebar {
+	background: none;
+	border: none;
+	position: absolute;
+	top: -14px;
+	left: 0;
+	width: 550px;
+	height: 50px;
+	padding: 0;
+	z-index: 1000;
+}
+
+.crossmark-ui-dialog.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+.crossmark-ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	top: 0;
+	right: -14px;
+	width: 34px;
+	height: 34px;
+	background: url(http://crossmark.crossref.org/images/icons_34.png) top left no-repeat !important;
+	background-position: 0 0;
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-indent: -99999px;
+}
+
+.crossmark-ui-dialog.ui-dialog .ui-dialog-titlebar-close:hover {
+	background-position: -34px 0!important;
+}
+
+.crossmark-ui-dialog.ui-dialog #no-iframe,
+.crossmark-ui-dialog.ui-dialog iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 550px;
+	height: 550px;
+	z-index: 100;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+
+.crossmark-ui-dialog .ui-dialog-content {
+	position: relative;
+	background-color: #fff;
+}
+
+/* Avoid Clobbering exisiting UI stuff v1.4 */
+.crossmark-ui-dialog .ui-widget-header .ui-icon,
+.crossmark-ui-dialog .ui-state-hover .ui-icon,
+.crossmark-ui-dialog .ui-state-focus .ui-icon  {
+
+	background-image: none;
+
+}
+
+/* jQuery UI Resizable 1.8.7
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute; font-size: 0.1px; z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; right: 14px; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 14px; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 20px; height: 20px; right: -5px; bottom: -5px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+/* .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;} */
+
+.ui-icon-grip-diagonal-se {
+	background: url(http://crossmark.crossref.org/images/icons_34.png) top left no-repeat;
+	background-position: -84px -16px;
+}
+
+.ui-icon-grip-diagonal-se:hover {
+	background-position: 118px -16px;
+}
+
